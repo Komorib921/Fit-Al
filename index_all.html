@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>智能动域——AI智能健身私教系统</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background: linear-gradient(135deg, #0D0D1A 0%, #13132B 100%); 
+            min-height: 100vh; 
+            font-family: 'Segoe UI', sans-serif; 
+            color: #fff; 
+            padding: 40px 20px;
+        }
+        h1 { 
+            text-align: center; 
+            font-size: 2.5em; 
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00D4AA, #6C5CE7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle { 
+            text-align: center; 
+            color: #6C6C8A; 
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #13132B;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #6C5CE7;
+            box-shadow: 0 10px 40px rgba(108, 92, 231, 0.3);
+        }
+        .card-icon { font-size: 3em; margin-bottom: 15px; }
+        .card-title { font-size: 1.3em; font-weight: 700; margin-bottom: 8px; }
+        .card-desc { color: #6C6C8A; font-size: 0.9em; line-height: 1.5; }
+        .card-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            margin-top: 12px;
+        }
+        .badge-main { background: rgba(0, 212, 170, 0.2); color: #00D4AA; }
+        .badge-test { background: rgba(253, 203, 110, 0.2); color: #FDCB6E; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #6C6C8A;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏋️ FitAI Coach 全页面导航</h1>
+    <p class="subtitle">点击任意卡片即可跳转到对应页面</p>
+    
+    <div class="grid">
+        <!-- 首页 -->
+        <a href="index.html" class="card">
+            <div class="card-icon">🏠</div>
+            <div class="card-title">首页</div>
+            <div class="card-desc">开始健身之旅，查看今日推荐训练方案</div>
+            <span class="card-badge badge-main">主入口</span>
+        </a>
+        
+        <!-- 训练页面 -->
+        <a href="workout.html" class="card">
+            <div class="card-icon">💪</div>
+            <div class="card-title">训练页面</div>
+            <div class="card-desc">AI实时计数训练，左右腿交替高抬腿</div>
+            <span class="card-badge badge-main">核心功能</span>
+        </a>
+        
+        <!-- 热身页面 -->
+        <a href="warmup.html" class="card">
+            <div class="card-icon">🔥</div>
+            <div class="card-title">热身页面</div>
+            <div class="card-desc">全身动态热身，3D教练示范指导</div>
+            <span class="card-badge badge-main">必备流程</span>
+        </a>
+        
+        <!-- 拉伸页面 -->
+        <a href="stretch.html" class="card">
+            <div class="card-icon">🧘</div>
+            <div class="card-title">拉伸页面</div>
+            <div class="card-desc">训练后全身拉伸放松，缓解肌肉酸痛</div>
+            <span class="card-badge badge-main">恢复必备</span>
+        </a>
+        
+        <!-- 饮食建议 -->
+        <a href="diet.html" class="card">
+            <div class="card-icon">🥗</div>
+            <div class="card-title">饮食建议</div>
+            <div class="card-desc">科学营养搭配，助力健身效果最大化</div>
+            <span class="card-badge">辅助功能</span>
+        </a>
+        
+        <!-- 姿势检测 -->
+        <a href="posture.html" class="card">
+            <div class="card-icon">📷</div>
+            <div class="card-title">姿势检测</div>
+            <div class="card-desc">AI实时监测运动姿势，矫正错误动作</div>
+            <span class="card-badge">特色功能</span>
+        </a>
+        
+        <!-- 训练计划 -->
+        <a href="plan.html" class="card">
+            <div class="card-icon">📋</div>
+            <div class="card-title">训练计划</div>
+            <div class="card-desc">个性化训练方案，智能推荐动作组合</div>
+            <span class="card-badge">配置功能</span>
+        </a>
+        
+        <!-- 个人资料 -->
+        <a href="profile.html" class="card">
+            <div class="card-icon">👤</div>
+            <div class="card-title">个人资料</div>
+            <div class="card-desc">设置个人信息、健身目标和偏好</div>
+            <span class="card-badge">账户设置</span>
+        </a>
+        
+        <!-- 数据面板 -->
+        <a href="dashboard.html" class="card">
+            <div class="card-icon">📊</div>
+            <div class="card-title">数据面板</div>
+            <div class="card-desc">查看训练数据、进步曲线和历史记录</div>
+            <span class="card-badge">数据分析</span>
+        </a>
+        
+    </div>
+    
+    <div class="footer">
+        <p>💡 提示：建议从【首页】开始，系统会引导你完成完整的训练流程</p>
+        <p style="margin-top: 8px;">服务器地址: <code style="background: #1A1A3E; padding: 4px 8px; border-radius: 4px;">http://localhost:8080</code></p>
+    </div>
+</body>
+</html>
